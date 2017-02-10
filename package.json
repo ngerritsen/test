@@ -1,0 +1,49 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Test boilerplate",
+  "main": "src",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ava",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngerritsen/test.git"
+  },
+  "keywords": [
+    "test",
+    "ava",
+    "unit"
+  ],
+  "author": "Niels Gerritsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngerritsen/test/issues"
+  },
+  "homepage": "https://github.com/ngerritsen/test#readme",
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2016": "^6.22.0",
+    "jsdom": "^9.10.0",
+    "sinon": "^1.17.7",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "babel-register": "^6.22.0"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*Test.js"
+    ],
+    "require": [
+      "babel-register"
+    ]
+  }
+}
