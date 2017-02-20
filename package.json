@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "ava",
-    "test:watch": "ava --watch",
+    "test": "ava ./tests/**Test.js",
+    "test:watch": "ava ./tests/**Test.js --watch",
     "start": "webpack-dev-server"
   },
   "repository": {
